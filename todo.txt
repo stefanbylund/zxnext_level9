@@ -1,0 +1,5 @@
+* Fix the FIXMEs/TODOs.
+
+* Toggle graphics on/off with right mouse button or GRAPH key?
+
+* Future improvement: Move input cursor left or right and delete or insert a character.

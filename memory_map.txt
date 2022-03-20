@@ -1,0 +1,176 @@
+Level 9 Interpreter - Memory Layout
+-----------------------------------
+
+This document describes the memory layout of the Level 9 interpreter.
+
+The ZX Spectrum Next has 64 KB addressable memory. This memory is divided in 8
+MMU slots of 8 KB each and numbered from 0 to 7. An unexpanded ZX Spectrum Next
+has 1 MB physical RAM of which 768 KB is available to programs. This 768 KB RAM
+is divided in 96 MMU pages of 8 KB each and numbered from 0 to 95. The 96 MMU
+pages can be paged in to any of the 8 MMU slots in the 64 KB address space.
+MMU pages 0 to 15 correspond to the 128 KB RAM of the ZX Spectrum 128. MMU pages
+16 to 35 are by default used for the 320x256 layer 2 main and shadow screens in
+ZX Spectrum Next. MMU pages 36 to 95 can be used freely by programs.
+
+
+Memory Map
+----------
+
+This is the memory map for the Level 9 interpreter:
+
+ Timex hi-res graphics mode
+ --------------------------
+
+ |------------------------------------------------| 0xFFFF    |---- 0xFFFF
+ | Stack (grows downward) [max 255 bytes]         |           |
+ |------------------------------------------------| 0xFF00    |
+ | IM2 interrupt vector table and ISR [260 bytes] |           | MMU slot 7
+ |------------------------------------------------| 0xFDFD    |
+ |                                                |           |
+ |                                                |           |---- 0xE000
+ |                                                |           |
+ |                                                |           | MMU slot 6
+ |                                                |           |---- 0xC000
+ | Main program (code, data, bss) [max ~33.5 KB]  |           |
+ |                                                |           | MMU slot 5
+ |                                                |           |---- 0xA000
+ |                                                |           |
+ |                                                |           | MMU slot 4
+ |                                                |           |---- 0x8000
+ |------------------------------------------------| 0x7800    |
+ | Timex hi-res screen (odd columns) [6 KB]       |           | MMU slot 3
+ |------------------------------------------------| 0x6000    |---- 0x6000
+ | Free RAM used by main program [2 KB]           |           |
+ |------------------------------------------------| 0x5800    | MMU slot 2
+ | Timex hi-res screen (even columns) [6 KB]      |           |
+ |------------------------------------------------| 0x4000    |---- 0x4000
+ |                                                |           |
+ |                                                |           | MMU slot 1
+ | Paging area for game story file [16 KB]        |           |---- 0x2000
+ |                                                |           |
+ |                                                |           | MMU slot 0
+ |------------------------------------------------| 0x0000    |---- 0x0000
+
+
+ ULA graphics mode
+ -----------------
+
+ |------------------------------------------------| 0xFFFF    |---- 0xFFFF
+ | Stack (grows downward) [max 255 bytes]         |           |
+ |------------------------------------------------| 0xFF00    |
+ | IM2 interrupt vector table and ISR [260 bytes] |           | MMU slot 7
+ |------------------------------------------------| 0xFDFD    |
+ |                                                |           |
+ |                                                |           |---- 0xE000
+ |                                                |           |
+ |                                                |           | MMU slot 6
+ |                                                |           |---- 0xC000
+ |                                                |           |
+ | Main program (code, data, bss) [max ~39.5 KB]  |           | MMU slot 5
+ |                                                |           |---- 0xA000
+ |                                                |           |
+ |                                                |           | MMU slot 4
+ |                                                |           |---- 0x8000
+ |                                                |           |
+ |                                                |           | MMU slot 3
+ |------------------------------------------------| 0x6000    |---- 0x6000
+ | Free RAM used by main program [1.25 KB]        |           |
+ |------------------------------------------------| 0x5B00    | MMU slot 2
+ | ULA screen [6.75 KB]                           |           |
+ |------------------------------------------------| 0x4000    |---- 0x4000
+ |                                                |           |
+ |                                                |           | MMU slot 1
+ | Paging area for game story file [16 KB]        |           |---- 0x2000
+ |                                                |           |
+ |                                                |           | MMU slot 0
+ |------------------------------------------------| 0x0000    |---- 0x0000
+
+
+MMU Pages
+---------
+
+Below are the MMU pages used by the Level 9 interpreter (in addition to the MMU
+pages normally located in the 64 KB address space). Note that MMU slot 2 (which
+normally contains the ULA screen in MMU page 10) is used as a temporary working
+area when reading and writing files using ESXDOS.
+
+* Game state backup:
+  MMU page 2 is used for backing up and restoring the game state via MMU slot 2
+  if loading of a new game state from file would fail.
+
+* Layer 2 screen:
+  MMU pages 16 to 25 (80 KB) and 26 to 35 (80 KB) contain the 320x256 layer 2
+  main and shadow screens and are loaded via MMU slot 2.
+
+* RAM save area:
+  MMU pages 36 to 39 (32 KB) contain the RAM save area which is used by the RAM
+  SAVE command to save the current position. It is also used implicitly by the
+  interpreter to support the UNDO/OOPS command in multiple steps.
+
+* Game story file:
+  MMU pages 40 to 47 (64 KB) contain the game story file and are loaded via
+  MMU slot 2. The currently used part of the game story file is paged-in to
+  MMU slots 0 and 1 (16 KB).
+
+
+Below is a list of all MMU pages and their usage in the Level 9 interpreter.
+
+MMU page   Usage
+--------   -------------------------------
+00         Main program
+01         Main program
+02         Game state backup
+03         <free>
+04         Main program
+05         Main program
+06         <free>
+07         <free>
+08         <free>
+09         <free>
+10         ULA screen / Timex hi-res screen
+11         Timex hi-res screen
+12         <free>
+13         <free>
+14         <free>
+15         <free>
+16         Layer 2 main screen
+17         Layer 2 main screen
+18         Layer 2 main screen
+19         Layer 2 main screen
+20         Layer 2 main screen
+21         Layer 2 main screen
+22         Layer 2 main screen
+23         Layer 2 main screen
+24         Layer 2 main screen
+25         Layer 2 main screen
+26         Layer 2 shadow screen
+27         Layer 2 shadow screen
+28         Layer 2 shadow screen
+29         Layer 2 shadow screen
+30         Layer 2 shadow screen
+31         Layer 2 shadow screen
+32         Layer 2 shadow screen
+33         Layer 2 shadow screen
+34         Layer 2 shadow screen
+35         Layer 2 shadow screen
+36         RAM save area
+37         RAM save area
+38         RAM save area
+39         RAM save area
+40         Game story file
+41         Game story file
+42         Game story file
+43         Game story file
+44         Game story file
+45         Game story file
+46         Game story file
+47         Game story file
+48         <free>
+49         <free>
+50         <free>
+..         <free>
+..         <free>
+..         <free>
+93         <free>
+94         <free>
+95         <free>

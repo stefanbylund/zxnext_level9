@@ -1,0 +1,4 @@
+bin/
+.vs/
+x64/
+*.vcxproj.user

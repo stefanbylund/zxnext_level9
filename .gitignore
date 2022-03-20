@@ -1,0 +1,9 @@
+zcc_opt.def
+zcc_proj.lst
+zproject.lst
+obj/
+bin/
+src/zconfig.h
+src/zconfig.inc
+src/zconfig.m4
+src/zpragma.inc
