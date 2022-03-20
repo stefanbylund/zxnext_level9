@@ -36,7 +36,7 @@ folder(s).
 
 ### Spectrum Next
 
-1. Download [level9.zip](build/level9.zip) and unpack it on an SD card
+1. Download [level9.zip](level9.zip) and unpack it on an SD card
 containing the Spectrum Next system software.
 
 2. Insert the SD card into your Spectrum Next computer and start it.
@@ -56,7 +56,7 @@ emulator.
 2. Make sure CSpect.exe is in your PATH or set the CSPECT_HOME environment
 variable to the directory where it is located.
 
-3. Download [level9.zip](build/level9.zip) and unpack it on your PC.
+3. Download [level9.zip](level9.zip) and unpack it on your PC.
 
 4. Run the batch file **level9/&lt;game&gt;/run_cspect.bat** to start the
 selected game.
@@ -69,7 +69,7 @@ emulator.
 2. Make sure zesarux.exe is in your PATH or set the ZESARUX_HOME environment
 variable to the directory where it is located.
 
-3. Download [level9.zip](build/level9.zip) and unpack it on your PC.
+3. Download [level9.zip](level9.zip) and unpack it on your PC.
 
 4. Run the batch file **level9/&lt;game&gt;/run_zesarux.bat** to start the
 selected game.
