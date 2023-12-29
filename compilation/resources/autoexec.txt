@@ -1,0 +1,5 @@
+#autostart
+10 REG 7,3
+20 CD "c:/level9.run"
+30 LOAD "run.bas"
+40 ERASE

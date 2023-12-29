@@ -1,0 +1,37 @@
+#autostart
+ 10 REG 7,3
+ 20 ;****** Main menu ******
+ 30 CLS
+ 40 REG 127,0
+ 50 .SPUI menu -i "menu.ini"
+ 60 LET %m = % REG 127
+ 70 IF %m =  1 THEN PROC submenu("colossal-adventure", "Colossal Adventure"): GOTO 30
+ 80 IF %m =  2 THEN PROC submenu("adventure-quest", "Adventure Quest"): GOTO 30
+ 90 IF %m =  3 THEN PROC submenu("dungeon-adventure", "Dungeon Adventure"): GOTO 30
+100 IF %m =  4 THEN PROC submenu("snowball", "Snowball"): GOTO 30
+110 IF %m =  5 THEN PROC submenu("return-to-eden", "Return to Eden"): GOTO 30
+120 IF %m =  6 THEN PROC submenu("worm-in-paradise", "The Worm in Paradise"): GOTO 30
+130 IF %m =  7 THEN PROC submenu("time-and-magik", "Time and Magik trilogy"): GOTO 30
+140 IF %m =  8 THEN PROC submenu("emerald-isle", "Emerald Isle"): GOTO 30
+150 IF %m =  9 THEN PROC submenu("erik-the-viking", "Erik the Viking"): GOTO 30
+160 IF %m = 10 THEN PROC submenu("knight-orc", "Knight Orc"): GOTO 30
+170 IF %m = 11 THEN PROC submenu("gnome-ranger", "Gnome Ranger"): GOTO 30
+180 IF %m = 12 THEN PROC submenu("ingrids-back", "Ingrid's Back"): GOTO 30
+190 IF %m = 13 THEN PROC submenu("lancelot", "Lancelot"): GOTO 30
+200 IF %m = 14 THEN PROC submenu("scapeghost", "Scapeghost"): GOTO 30
+210 IF %m = 15 THEN PROC submenu("archers", "The Archers"): GOTO 30
+220 IF %m = 16 THEN PROC submenu("secret-diary-of-adrian-mole", "Diary of Adrian Mole"): GOTO 30
+230 IF %m = 17 THEN PROC submenu("growing-pains-of-adrian-mole", "Pains of Adrian Mole"): GOTO 30
+240 ERASE
+250 ;****** Sub menu ******
+260 DEFPROC submenu(d$, n$)
+270   CLS
+280   REG 127,0
+290   CD d$
+300   LET a$ = "menu -x 1 -y 9 -c 28 -r 3 -t """ + n$ + """ ""Run game in 256x192 mode"" ""Run game in 512x192 mode"" ""Back..."""
+310   .$ SPUI a$
+320   LET %s = % REG 127
+330   IF %s = 1 THEN .nexload level9_256.nex
+340   IF %s = 2 THEN .nexload level9_512.nex
+350   CD ".."
+360 ENDPROC

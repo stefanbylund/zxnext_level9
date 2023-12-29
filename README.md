@@ -99,7 +99,7 @@ Spectrum Next:
 | DOWN         | SHIFT + 6     | Scroll graphics down.                                                    |
 | TRUE VIDEO   | SHIFT + 3     | Change text colour by cycling downwards through a palette of 32 colours. |
 | INV VIDEO    | SHIFT + 4     | Change text colour by cycling upwards through a palette of 32 colours.   |
-| Mouse        | Mouse         | Scroll graphics up and down by dragging it or using the mouse wheel.     |
+| Mouse        | Mouse         | Scroll graphics up and down by dragging or by using the mouse wheel.     |
 
 ## Games
 

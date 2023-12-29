@@ -33,7 +33,7 @@ game "Adventure" with all the treasures, creatures, rooms and puzzles of the
 original. And we have added 70 bonus locations to the end-game. No one else
 gives you this.
 
-* Year: 1986 (1983)
+* Year: 1986 (1982)
 * Original platform: Atari ST
 * Game version: V3
 * Graphics type: Line-drawn
@@ -46,7 +46,7 @@ Hundreds of years have passed since the time of Colossal Adventure and evil
 forces are invading the land. One hope remains: you must discover the old roads
 to the Dark Tower, fortress of the Demon Lord. Only there can you defeat him.
 
-* Year: 1986 (1983)
+* Year: 1986 (1982)
 * Original platform: Atari ST
 * Game version: V3
 * Graphics type: Line-drawn
@@ -61,7 +61,7 @@ hoarded treasure and magic. There are just two snags. Other creatures want the
 loot, as well, and many guardians remain: skeletons, carnivorous jellies, black
 balls etc. Even an orc or two. Success will not come easily!
 
-* Year: 1986 (1983)
+* Year: 1986 (1982)
 * Original platform: Atari ST
 * Game version: V3
 * Graphics type: Line-drawn
@@ -120,123 +120,6 @@ farmer who will soon return to harvest his crop?
 
 ![The Worm in Paradise](screenshots/worm-in-paradise.png)
 
-## Emerald Isle
-
-Fierce winds seize your aircraft over the Bermuda Triangle and hurl it to
-destruction. You escape by parachute, floating downwards to the lonely atoll,
-the "Emerald Isle", from which few escape. The only way out is to solve its
-challenges...
-
-* Year: 1985
-* Original platform: Amstrad CPC
-* Game version: V2
-* Graphics type: Line-drawn
-
-![Emerald Isle](screenshots/emerald-isle.png)
-
-## The Saga of Erik the Viking
-
-A visually dramatic adventure based on the award-winning book by Monty Python
-star Terry Jones. Travel as Erik the Viking, in search of the evil Dogfighters
-who have kidnapped your family. Explore authentic Viking settlements and seek
-help from Wizards, Dragons and Giants in strange lands.
-
-* Year: 1985
-* Original platform: Amstrad CPC
-* Game version: V2
-* Graphics type: Line-drawn
-
-![The Saga of Erik the Viking](screenshots/erik-the-viking.png)
-
-## The Secret Diary of Adrian Mole Aged 13¾
-
-I learned today that I am to be the subject of a computer game. The object of
-the game is to make me popular with everyone, which sounds dead brilliant.
-Apparently they've written an enormous programme containing 200 kilos of text,
-which Brainbox Henderson says is a lot. Now everyone else can have a go at
-coping with all the problems that beset me over an entire year of my life. This
-is a multiple choice illustrated text game for family entertainment and is a
-change from Level 9's adventure games. Based on the children's book of the same
-title by Sue Townsend.
-
-* Year: 1985
-* Original platform: Amstrad CPC
-* Game version: V3
-* Graphics type: Line-drawn
-
-![The Secret Diary of Adrian Mole Aged 13¾](screenshots/secret-diary-of-adrian-mole.png)
-
-## The Archers
-
-If they put you in charge of The Archers, how would you change life in Ambridge?
-Here's your chance to find out. In this four-part, illustrated, multiple choice
-text game you are the story editor, taking the plot decisions for Jack Wooley,
-Eddie Grundy, Elizabeth Archer and Nelson Gabriel. You're in charge, but you'll
-have to face the consequences of your decisions. They may cause a stir in The
-Bull - or in Broadcasting House. Watch out for memos from the Controller Radio 4
-and see how you fare in the charts! Based on the British television soap opera
-of the same name.
-
-* Year: 1985
-* Original platform: Amstrad CPC
-* Game version: V3
-* Graphics type: Line-drawn
-
-![The Archers](screenshots/archers.png)
-
-## The Growing Pains of Adrian Mole
-
-Welcome to the second computer game to feature the contents of my diary - is
-there no such thing as privacy? Such is the price of fame I suppose. The aim of
-the game is to make decisions for me through multiple choice questions. Now I
-am more mature, life is even more complicated and I have even more decisions to
-make, so there is a lot of text in there and some very nice illustrations too.
-Some may think it's a game; I prefer to think of it as a sort of quest for the
-Meaning of Life - not easy to find in Laurel Close, Leicester! So good luck,
-being popular as well as an intellectual is not so easy. I should know, I have
-spent all my life trying! Based on the children's book of the same title by Sue
-Townsend.
-
-* Year: 1987
-* Original platform: Amstrad CPC
-* Game version: V3
-* Graphics type: Line-drawn
-
-![The Growing Pains of Adrian Mole](screenshots/growing-pains-of-adrian-mole.png)
-
-## Knight Orc
-
-Knight Orc is Level 9's most innovative and fun-packed adventure to date. Set in
-three parts, it casts you as an oppressed orc in a magical world where all is
-not as it first seems. For generations humans have been persecuting orcs, and
-now it's time to get your own back. Knight Orc is a challenging game which is
-truly interactive. Each character leads its own life in the game, and their
-actions can affect you and the outcome of the adventure. Communication with
-other characters, learning spells and solving puzzles are all a vital part of
-the game if you are to escape the mystical world and take revenge on humankind.
-
-* Year: 1987
-* Original platform: PC (game files), Amiga (picture files)
-* Game version: V4
-* Graphics type: Digitised bitmap
-
-![Knight Orc #1](screenshots/knight-orc1.png)
-![Knight Orc #2](screenshots/knight-orc2.png)
-
-## Gnome Ranger
-
-In which Ingrid's bright ideas demolish the farm and she is "accidentally"
-banished to the wilderness by her gnome family. The monsters won't know what's
-hit them!
-
-* Year: 1987
-* Original platform: PC (game files), Amiga (picture files)
-* Game version: V4
-* Graphics type: Digitised bitmap
-
-![Gnome Ranger #1](screenshots/gnome-ranger1.png)
-![Gnome Ranger #2](screenshots/gnome-ranger2.png)
-
 ## Time and Magik trilogy
 
 ### Lords of Time
@@ -284,6 +167,83 @@ is the sequel to Red Moon.
 ![The Price of Magik #1](screenshots/price-of-magik1.png)
 ![The Price of Magik #2](screenshots/price-of-magik2.png)
 
+## Emerald Isle
+
+Fierce winds seize your aircraft over the Bermuda Triangle and hurl it to
+destruction. You escape by parachute, floating downwards to the lonely atoll,
+the "Emerald Isle", from which few escape. The only way out is to solve its
+challenges...
+
+* Year: 1985
+* Original platform: Amstrad CPC
+* Game version: V2
+* Graphics type: Line-drawn
+
+![Emerald Isle](screenshots/emerald-isle.png)
+
+## The Saga of Erik the Viking
+
+A visually dramatic adventure based on the award-winning book by Monty Python
+star Terry Jones. Travel as Erik the Viking, in search of the evil Dogfighters
+who have kidnapped your family. Explore authentic Viking settlements and seek
+help from Wizards, Dragons and Giants in strange lands.
+
+* Year: 1985
+* Original platform: Amstrad CPC
+* Game version: V2
+* Graphics type: Line-drawn
+
+![The Saga of Erik the Viking](screenshots/erik-the-viking.png)
+
+## Knight Orc
+
+Knight Orc is Level 9's most innovative and fun-packed adventure to date. Set in
+three parts, it casts you as an oppressed orc in a magical world where all is
+not as it first seems. For generations humans have been persecuting orcs, and
+now it's time to get your own back. Knight Orc is a challenging game which is
+truly interactive. Each character leads its own life in the game, and their
+actions can affect you and the outcome of the adventure. Communication with
+other characters, learning spells and solving puzzles are all a vital part of
+the game if you are to escape the mystical world and take revenge on humankind.
+
+* Year: 1987
+* Original platform: PC (game files), Amiga (picture files)
+* Game version: V4
+* Graphics type: Digitised bitmap
+
+![Knight Orc #1](screenshots/knight-orc1.png)
+![Knight Orc #2](screenshots/knight-orc2.png)
+
+## Gnome Ranger
+
+In which Ingrid's bright ideas demolish the farm and she is "accidentally"
+banished to the wilderness by her gnome family. The monsters won't know what's
+hit them!
+
+* Year: 1987
+* Original platform: PC (game files), Amiga (picture files)
+* Game version: V4
+* Graphics type: Digitised bitmap
+
+![Gnome Ranger #1](screenshots/gnome-ranger1.png)
+![Gnome Ranger #2](screenshots/gnome-ranger2.png)
+
+## Gnome Ranger II: Ingrid's Back!
+
+Jasper Quickbuck, insider-dealing lord of Ridley's Manor, plots to steamroller
+the gnome-belt for yuppie housing. To the gnomes' horror, accident-prone Ingrid
+Bottomlow, who just escaped from her "holiday" in the wilderness, seems to be
+their only hope. When immovable market forces meet the irresistible Ingrid, will
+there be a U-turn? Or will humour be the only winner?
+
+* Year: 1988
+* Original platform: Atari ST
+* Game version: V4
+* Graphics type: Hand-drawn bitmap
+
+![Ingrid's Back #1](screenshots/ingrids-back1.png)
+![Ingrid's Back #2](screenshots/ingrids-back2.png)
+
 ## Lancelot
 
 Travel back to the Age of Chivalry when knights were bold, galloping across the
@@ -304,22 +264,6 @@ need all your strength, wit and valour to achieve your goal.
 ![Lancelot #1](screenshots/lancelot1.png)
 ![Lancelot #2](screenshots/lancelot2.png)
 
-## Ingrid's Back: Gnome Ranger 2
-
-Jasper Quickbuck, insider-dealing lord of Ridley's Manor, plots to steamroller
-the gnome-belt for yuppie housing. To the gnomes' horror, accident-prone Ingrid
-Bottomlow, who just escaped from her "holiday" in the wilderness, seems to be
-their only hope. When immovable market forces meet the irresistible Ingrid, will
-there be a U-turn? Or will humour be the only winner?
-
-* Year: 1988
-* Original platform: Atari ST
-* Game version: V4
-* Graphics type: Hand-drawn bitmap
-
-![Ingrid's Back #1](screenshots/ingrids-back1.png)
-![Ingrid's Back #2](screenshots/ingrids-back2.png)
-
 ## Scapeghost
 
 It's not easy being a ghost; betrayed to a criminal gang and falsely blamed for
@@ -335,3 +279,61 @@ the ghost of a chance!
 
 ![Scapeghost #1](screenshots/scapeghost1.png)
 ![Scapeghost #2](screenshots/scapeghost2.png)
+
+## Multiple choice games
+
+### The Archers
+
+If they put you in charge of The Archers, how would you change life in Ambridge?
+Here's your chance to find out. In this four-part, illustrated, multiple choice
+text game you are the story editor, taking the plot decisions for Jack Wooley,
+Eddie Grundy, Elizabeth Archer and Nelson Gabriel. You're in charge, but you'll
+have to face the consequences of your decisions. They may cause a stir in The
+Bull - or in Broadcasting House. Watch out for memos from the Controller Radio 4
+and see how you fare in the charts! Based on the British television soap opera
+of the same name.
+
+* Year: 1985
+* Original platform: Amstrad CPC
+* Game version: V3
+* Graphics type: Line-drawn
+
+![The Archers](screenshots/archers.png)
+
+### The Secret Diary of Adrian Mole Aged 13 &#190;
+
+I learned today that I am to be the subject of a computer game. The object of
+the game is to make me popular with everyone, which sounds dead brilliant.
+Apparently they've written an enormous programme containing 200 kilos of text,
+which Brainbox Henderson says is a lot. Now everyone else can have a go at
+coping with all the problems that beset me over an entire year of my life. This
+is a multiple choice illustrated text game for family entertainment and is a
+change from Level 9's adventure games. Based on the children's book of the same
+title by Sue Townsend.
+
+* Year: 1985
+* Original platform: Amstrad CPC
+* Game version: V3
+* Graphics type: Line-drawn
+
+![The Secret Diary of Adrian Mole Aged 13 &#190;](screenshots/secret-diary-of-adrian-mole.png)
+
+### The Growing Pains of Adrian Mole
+
+Welcome to the second computer game to feature the contents of my diary - is
+there no such thing as privacy? Such is the price of fame I suppose. The aim of
+the game is to make decisions for me through multiple choice questions. Now I
+am more mature, life is even more complicated and I have even more decisions to
+make, so there is a lot of text in there and some very nice illustrations too.
+Some may think it's a game; I prefer to think of it as a sort of quest for the
+Meaning of Life - not easy to find in Laurel Close, Leicester! So good luck,
+being popular as well as an intellectual is not so easy. I should know, I have
+spent all my life trying! Based on the children's book of the same title by Sue
+Townsend.
+
+* Year: 1987
+* Original platform: Amstrad CPC
+* Game version: V3
+* Graphics type: Line-drawn
+
+![The Growing Pains of Adrian Mole](screenshots/growing-pains-of-adrian-mole.png)

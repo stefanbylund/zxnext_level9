@@ -15,6 +15,7 @@
 # debug: Compile with debug info.
 # config: Only generate configuration files.
 # compilation: Build the Level 9 games compilation for Spectrum Next.
+# compilation_boot: Build the Level 9 auto-bootable games compilation for Spectrum Next.
 #
 # Optional make command-line options:
 # CONFIG: List of defines passed to configure.m4 to override its configuration.
@@ -30,6 +31,8 @@ M4 := m4
 
 CP := cp -r
 
+MV := mv
+
 MKDIR := mkdir -p
 
 RM := rm -rf
@@ -37,6 +40,8 @@ RM := rm -rf
 CAT := cat
 
 ZIP := zip -r -q
+
+UNZIP := unzip -q
 
 ifeq ($(BUILD_OPT), true)
 CFLAGS_OPT := -SO3 --max-allocs-per-node200000
@@ -61,6 +66,8 @@ OBJECTS := $(patsubst %.asm.m4,%.o,$(patsubst %.asm,%.o,$(patsubst %.c,%.o,$(add
 BINARY := bin/level9.nex
 
 GAMES := ../level9_games
+
+SPUI := compilation/resources/SPUI-0.4.2.zip
 
 # This makefile runs in two steps for configuring and then building the project.
 # The first step processes the configure.m4 file to generate the configuration
@@ -138,8 +145,24 @@ compilation:
 	$(MAKE) game GAME=worm-in-paradise
 	$(CP) compilation/README.md tmp/level9
 	$(CP) compilation/games.md tmp/level9
+	$(CP) compilation/resources/run.bas tmp/level9
+	$(CP) compilation/resources/menu.ini tmp/level9
+	$(MV) tmp/level9 tmp/level9.run
 	$(RM) compilation/level9.zip
-	cd tmp; $(ZIP) ../compilation/level9.zip level9
+	cd tmp; $(ZIP) ../compilation/level9.zip level9.run
+	$(RM) tmp
+
+.PHONY: compilation_boot
+compilation_boot:
+	$(RM) tmp
+	$(MKDIR) tmp/boot/dot/
+	$(MKDIR) tmp/boot/nextzxos/
+	$(UNZIP) $(SPUI) -d tmp
+	$(CP) tmp/SPUI*/SPUI/dot/SPUI tmp/boot/dot/
+	$(CP) compilation/resources/autoexec.bas tmp/boot/nextzxos/
+	$(UNZIP) compilation/level9.zip -d tmp/boot
+	$(RM) compilation/level9-boot.zip
+	cd tmp/boot; $(ZIP) ../../compilation/level9-boot.zip .
 	$(RM) tmp
 
 .PHONY: game
