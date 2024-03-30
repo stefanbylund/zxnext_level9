@@ -2,27 +2,27 @@
 
 This file contains information about the games included in the [Level 9
 Compilation](README.md) for the ZX Spectrum Next. For each game there is a brief
-description of the game and information about which year the game was released
-(original release year in parentheses), the original platform the game files are
-taken from, the game version being used and the type of graphics in the game.
+description of the release and information about the year in which it was issued
+(original release year in parentheses), the original platform from which the
+files are taken, the game version used and the type of graphics in the game.
 
 There are four main versions of the Level 9 game file format: V1 to V4. The
-Level 9 interpreter for Spectrum Next only supports V2/V3/V4 games in order to
+Level 9 interpreter for Spectrum Next only supports V2-V4 games in order to
 minimise the interpreter size and since all V1 games were re-released as V2/V3
 games anyway.
 
-There are two types of graphics used in the Level 9 games. The earlier games
+There are two types of graphics used in the Level 9 games. The earlier releases
 used line-drawn graphics that were memory-efficient and portable but very
-simple. The later games used platform-specific bitmap graphics; first digitised
-pictures that were an improvement to the previous line-drawn graphics but still
-a bit rough and then later hand-drawn bitmap pictures of top quality.
+simple. The later games used platform-specific bitmap graphics; first, digitised
+pictures that were an improvement on the previous line-drawn graphics but still
+a bit rough, and then later hand-drawn bitmap pictures of top quality.
 
-Note: Two of the included games mix game files from IBM PC with bitmap files
+Note: two of the included games mix game files from IBM PC with bitmap files
 from Commodore Amiga. The reason for this is that the game files from the Amiga
-version didn't work with the walkthrough test scripts for these games while the
-game files from the PC version worked fine. The graphics is better in the Amiga
-version so the bitmap files are taken from there. This works fine since the
-bitmap files have the same names in both versions.
+version didn't work with the walkthrough test scripts for these games, while the
+game files from the PC version worked fine. The graphics are better in the Amiga
+version, though, so the bitmap files are taken from there. This works fine since
+the bitmap files have the same names in both versions.
 
 ## Jewels of Darkness trilogy
 
@@ -31,7 +31,9 @@ bitmap files have the same names in both versions.
 Colossal Adventure is a complete, full-size version of the classic mainframe
 game "Adventure" with all the treasures, creatures, rooms and puzzles of the
 original. And we have added 70 bonus locations to the end-game. No one else
-gives you this.
+gives you this. Visit Colossal Cavern and meet the giant snake, Chinese dragon
+and mercenary troll, and watch out for the knives of the evil dwarfs. No true
+adventurer should miss this game.
 
 * Year: 1986 (1982)
 * Original platform: Atari ST
@@ -45,6 +47,9 @@ gives you this.
 Hundreds of years have passed since the time of Colossal Adventure and evil
 forces are invading the land. One hope remains: you must discover the old roads
 to the Dark Tower, fortress of the Demon Lord. Only there can you defeat him.
+The way is long and dangerous, through nine different regions of forest, desert,
+mountain, water, fire etc., but with cunning you can make it to the final
+confrontation with Agaliarept.
 
 * Year: 1986 (1982)
 * Original platform: Atari ST
@@ -58,7 +63,7 @@ to the Dark Tower, fortress of the Demon Lord. Only there can you defeat him.
 Dungeon Adventure completes the Jewels of Darkness trilogy. The Demon Lord has
 been defeated and his Dark Tower cast down. But its dungeons remain, filled with
 hoarded treasure and magic. There are just two snags. Other creatures want the
-loot, as well, and many guardians remain: skeletons, carnivorous jellies, black
+loot as well, and many guardians remain: skeletons, carnivorous jellies, black
 balls etc. Even an orc or two. Success will not come easily!
 
 * Year: 1986 (1982)
@@ -72,12 +77,12 @@ balls etc. Even an orc or two. Success will not come easily!
 
 ### Snowball
 
-The massive starship, Snowball 9, is carrying 2 million hibernating colonists to
-Eden, fertile planet in the Eridani star system, in this top selling game with
-over 7000 locations. The Snowball has been hijacked and is heading into the sun
-in this first part of the Silicon Dreams trilogy. You'll meet Waldroids,
+The massive starship, Snowball 9, is carrying two million hibernating colonists
+to Eden, fertile planet in the Eridani star system, in this top selling game
+with over 7000 locations. The Snowball has been hijacked and is heading into the
+sun in this first part of the Silicon Dreams trilogy. You'll meet Waldroids,
 Nightingales and other strange robots in this massive science fiction adventure.
-But the most buffing puzzle, according to many players, is how to use the
+But the most baffling puzzle, according to many players, is how to use the
 control room computer.
 
 * Year: 1986 (1983)
@@ -107,8 +112,8 @@ a game!
 
 The Worm in Paradise concludes the Silicon Dreams trilogy and is set in the far
 future. Mankind rules a hundred planets and this empire is expanding throughout
-the galaxy. Utopia seems at hand but one threat remains... Too many nearby
-planets can support human life and this can not be chance. It probably means
+the galaxy. Utopia seems at hand, but one threat remains... Too many nearby
+planets can support human life and this cannot be by chance. It probably means
 mankind was intended to spread throughout the stars. But then what? Are we
 dealing with a benevolent God, or could mankind have been seeded by a cosmic
 farmer who will soon return to harvest his crop?
@@ -124,10 +129,12 @@ farmer who will soon return to harvest his crop?
 
 ### Lords of Time
 
-A band of evil timelords are plotting to alter world history, and Father Time
-has chosen you to help stop them. This requires nine symbolic objects from
-critical times in history. Chill to the ice-age, find the first hard disc, get
-lost in the dark ages and find what the future may have in store.
+In Lords of Time, the evil Timelords are fighting to change world history with
+the aim of gaining permanent control over Time and warping eternity according
+to their wishes. You must travel through the eons inside an amazing grandfather
+clock. Visit many different time zones to search out nine essential artefacts,
+and combine them to protect Time and Magik and avert the evil planned by the
+Timelords.
 
 * Year: 1988 (1983)
 * Original platform: Amiga
@@ -139,10 +146,10 @@ lost in the dark ages and find what the future may have in store.
 
 ### Red Moon
 
-Red Moon re-enacts a tale from the time where magik still worked and when
+Red Moon re-enacts a tale from the time where Magik still worked and when
 mythical monsters guarded fabulous treasure. You have the use of many weapons
-and a dozen of different magical spells to help you rescue the Red Moon Crystal,
-the only source of magik in the land.
+and a dozen different magical spells to help you rescue the Red Moon Crystal,
+the only source of Magik in the land.
 
 * Year: 1988 (1985)
 * Original platform: Amiga
@@ -171,7 +178,7 @@ is the sequel to Red Moon.
 
 Fierce winds seize your aircraft over the Bermuda Triangle and hurl it to
 destruction. You escape by parachute, floating downwards to the lonely atoll,
-the "Emerald Isle", from which few escape. The only way out is to solve its
+"Emerald Isle", from which few escape. The only way out is to solve its
 challenges...
 
 * Year: 1985
@@ -216,9 +223,9 @@ the game if you are to escape the mystical world and take revenge on humankind.
 
 ## Gnome Ranger
 
-In which Ingrid's bright ideas demolish the farm and she is "accidentally"
-banished to the wilderness by her gnome family. The monsters won't know what's
-hit them!
+When Ingrid the Sloane Gnome is banished to the wilderness by her exasperated
+family, the monsters don't know what's hit them! Gnome Ranger is a magical
+three-part adventure from Level 9.
 
 * Year: 1987
 * Original platform: PC (game files), Amiga (picture files)
@@ -251,10 +258,10 @@ countryside and rescuing damsels in distress. Level 9 recreates the time of
 wizards and the Knights of the Round Table in their greatest adventure yet.
 Lancelot is a three-part adventure, spanning the complete saga from the
 foundation of the Order to its finest hour - the quest for the Holy Grail.
-Guide Lancelot through his many exploits at Camelot, battle with wayward
-knights, and win the love of Guinevere and Elaine. The challenge which has
-fascinated treasure hunters through the centuries is now yours - and you'll
-need all your strength, wit and valour to achieve your goal.
+Guide Lancelot through his many exploits at Camelot, battle with wayward knights
+and win the love of Guinevere and Elaine. The challenge which has fascinated
+treasure hunters through the centuries is now yours - and you'll need all your
+strength, wits and valour to achieve your goal.
 
 * Year: 1988
 * Original platform: Amiga
@@ -266,7 +273,7 @@ need all your strength, wit and valour to achieve your goal.
 
 ## Scapeghost
 
-It's not easy being a ghost; betrayed to a criminal gang and falsely blamed for
+It's not easy being a ghost, betrayed to a criminal gang and falsely blamed for
 your own death when they escape with a hostage. Reincarnated in your old haunts,
 you have just three nights to clear your name. But with your detective skills
 and new psychic powers, a spirited revenge is a dead cert. The gangsters haven't
@@ -285,13 +292,13 @@ the ghost of a chance!
 ### The Archers
 
 If they put you in charge of The Archers, how would you change life in Ambridge?
-Here's your chance to find out. In this four-part, illustrated, multiple choice
+Here's your chance to find out. In this four-part multiple choice illustrated
 text game you are the story editor, taking the plot decisions for Jack Wooley,
 Eddie Grundy, Elizabeth Archer and Nelson Gabriel. You're in charge, but you'll
 have to face the consequences of your decisions. They may cause a stir in The
-Bull - or in Broadcasting House. Watch out for memos from the Controller Radio 4
-and see how you fare in the charts! Based on the British television soap opera
-of the same name.
+Bull - or in Broadcasting House. Watch out for memos from the Controller of
+Radio 4 and see how you fare in the charts! Based on the BBC soap opera of the
+same name.
 
 * Year: 1985
 * Original platform: Amstrad CPC
@@ -321,7 +328,7 @@ title by Sue Townsend.
 ### The Growing Pains of Adrian Mole
 
 Welcome to the second computer game to feature the contents of my diary - is
-there no such thing as privacy? Such is the price of fame I suppose. The aim of
+there no such thing as privacy? Such is the price of fame, I suppose. The aim of
 the game is to make decisions for me through multiple choice questions. Now I
 am more mature, life is even more complicated and I have even more decisions to
 make, so there is a lot of text in there and some very nice illustrations too.

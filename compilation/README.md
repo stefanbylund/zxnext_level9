@@ -2,7 +2,7 @@
 
 ### [DOWNLOAD COMPILATION (auto-bootable overlay)](level9-boot.zip)
 ### [DOWNLOAD COMPILATION (only the games)](level9.zip)
-### [DOWNLOAD CASE COVER](resources/case-cover-print.pdf)
+### [DOWNLOAD CASE COVER AND SD CARD LABEL](resources/case-cover-print.pdf)
 
 The Level 9 Compilation is an unofficial compilation of all of Level 9
 Computing's text adventure and multiple choice games for the ZX Spectrum Next.
@@ -33,7 +33,7 @@ and another containing just the games.
 
 Here are instructions on how to create your own physical edition of The Level 9
 Compilation. Note that the PDF to be printed contains three pages: the outer
-cover (page 1), the inner cover (page 2) and the SD card label (page 3).
+cover (page 1), the optional inner cover (page 2) and the SD card label (page 3).
 If you just want to display the cover without the crop marks for printing, you
 can download [case-cover-display.pdf](resources/case-cover-display.pdf) and open
 it in [Adobe Acrobat Reader](https://get.adobe.com/reader/).
@@ -46,11 +46,10 @@ lite version of the Spectrum Next system software, e.g.
 **System/Next distribution v.1.3.2 LITE VERSION**, and unpack it on an empty
 pre-formatted SD card.
 
-2. Download [level9-boot.zip](level9-boot.zip) and unpack it in the
-root directory of the same SD card. This is an auto-bootable System/Next overlay
-that contains all the games and which will overwrite the default autoexec.bas
-file to provide a start menu where you can select which of the games you want to
-play.
+2. Download [level9-boot.zip](level9-boot.zip) and unpack it in the root
+directory of the same SD card. This is an auto-bootable System/Next overlay that
+contains all the games and which will overwrite the default autoexec.bas file to
+provide a start menu where you can select which of the games you want to play.
 
 3. Download [case-cover-print.pdf](resources/case-cover-print.pdf) and open it
 in [Adobe Acrobat Reader](https://get.adobe.com/reader/). If you can print
@@ -75,9 +74,9 @@ That's it! Now you have your own physical edition of The Level 9 Compilation!
 This compilation is provided in two versions: one version that auto-boots from
 an SD card and another containing just the games. The games in the compilations
 use the Level 9 interpreter for Spectrum Next which is also available in two
-versions: level9_256.nex, which uses the standard Spectrum mode (256 x 192) for
-displaying the text, and level9_512.nex, which uses the Timex hi-res mode
-(512 x 192).
+versions: **level9_256.nex**, which uses the standard Spectrum mode (256 x 192)
+for displaying the text, and **level9_512.nex**, which uses the Timex hi-res
+mode (512 x 192).
 
 **Note:** When updating the compilation to a newer version, if you have save
 files that you still want to use, just copy those save files to the new game
@@ -85,8 +84,8 @@ folder(s).
 
 ### Auto-bootable compilation
 
-Skip steps 1 and 2 if you have already followed the steps in *Create Your Own
-Physical Edition*.
+Skip steps 1 and 2 if you have already followed the equivalent steps in *Create
+Your Own Physical Edition*.
 
 1. Go to [specnext.com](https://www.specnext.com/latestdistro) and download the
 lite version of the Spectrum Next system software, e.g.
@@ -102,21 +101,22 @@ directory of the same SD card.
 want to play.
 
 **Note:** The first time you boot the SD card, you will see the NextZXOS test
-screen and have to select which video mode to use (HDMI/VGA/RGB and 50-60 Hz
-refresh rate). Your selection is then stored in the machines/next/config.ini
+screen and have to select which video mode to use (HDMI/VGA/RGB and 50/60 Hz
+refresh rate). Your selection is then stored in the **machines/next/config.ini**
 file on the SD card. This is standard procedure for any auto-booting SD card
 for the Spectrum Next.
 
 ### Games-only compilation
 
-1. Download [level9.zip](level9.zip) and unpack it on an SD card
-containing the Spectrum Next system software.
+1. Download [level9.zip](level9.zip) and unpack it on an SD card containing the
+Spectrum Next system software.
 
 2. Insert the SD card into your Spectrum Next computer and start it.
 
-3. Enter the **level9.run** runnable directory in the NextZXOS Browser. This
-will automatically run its run.bas program, which will bring up a start menu
-where you can select which of the games you want to play.
+3. Highlight the **level9.run** runnable directory in the NextZXOS Browser and
+press Enter. This will automatically launch its run.bas program, which will
+bring up a start menu where you can select which of the games you want to play,
+and in what screen resolution.
 
 4. Alternatively, hold Symbol Shift when pressing Enter to manually open the
 **level9.run** directory to access its contents. Then go to the desired game
@@ -178,7 +178,7 @@ read more about it.
 * [Scapeghost](games.md#scapeghost)
 * [Multiple choice games](games.md#multiple-choice-games)
   * [The Archers](games.md#the-archers)
-  * [The Secret Diary of Adrian Mole Aged 13 &#190;](games.md#the-secret-diary-of-adrian-mole-aged-13)
+  * [The Secret Diary of Adrian Mole Aged 13 &#190;](games.md#the-secret-diary-of-adrian-mole-aged-13-)
   * [The Growing Pains of Adrian Mole](games.md#the-growing-pains-of-adrian-mole)
 
 ## User Interface
@@ -187,14 +187,18 @@ The game screen is divided into two sections. The top section shows the graphics
 for the current location and the bottom section is the text area which accepts
 user input at its prompt. When there are too many lines of text to display on
 the screen at once, the message "&lt;MORE&gt;" will appear at the bottom left of
-the screen. Pressing any key will continue the scrolling of the text. The last
-entered line of input can be edited by pressing the EDIT key. The text colour
-can be changed by cycling downwards or upwards through a palette of 32 colours
-by pressing TRUE VIDEO and INV VIDEO, respectively. The default text colour is
-light grey. The graphics can be scrolled up and down using the up and down arrow
-keys to make more or less room for the text. If a PS/2 mouse is connected to the
+the screen. Pressing any key will continue the scrolling of the text.
+
+The last entered line of input can be edited by pressing the EDIT key.
+
+The graphics can be scrolled up and down using the up and down arrow keys to
+make more or less room for the text. If a PS/2 mouse is connected to the
 Spectrum Next, it can also be used to scroll the graphics up and down by
 dragging it with the mouse or using the mouse wheel.
+
+The text colour can be changed by cycling downwards or upwards through a palette
+of 32 colours by pressing TRUE VIDEO and INV VIDEO, respectively. The default
+text colour is light grey.
 
 The table below shows the special keys used in the games:
 
