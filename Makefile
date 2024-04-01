@@ -143,8 +143,7 @@ compilation:
 	$(MAKE) game GAME=snowball
 	$(MAKE) game GAME=time-and-magik
 	$(MAKE) game GAME=worm-in-paradise
-	$(CP) compilation/README.md tmp/level9
-	$(CP) compilation/games.md tmp/level9
+	$(CP) compilation/resources/run.gde tmp/level9
 	$(CP) compilation/resources/run.bas tmp/level9
 	$(CP) compilation/resources/menu.ini tmp/level9
 	$(MV) tmp/level9 tmp/level9.run

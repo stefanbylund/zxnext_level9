@@ -22,16 +22,17 @@
 210 IF %m = 15 THEN PROC submenu("archers", "The Archers"): GOTO 30
 220 IF %m = 16 THEN PROC submenu("secret-diary-of-adrian-mole", "Diary of Adrian Mole"): GOTO 30
 230 IF %m = 17 THEN PROC submenu("growing-pains-of-adrian-mole", "Pains of Adrian Mole"): GOTO 30
-240 ERASE
-250 ;****** Sub menu ******
-260 DEFPROC submenu(d$, n$)
-270   CLS
-280   REG 127,0
-290   CD d$
-300   LET a$ = "menu -x 1 -y 9 -c 28 -r 3 -t """ + n$ + """ ""Run game in 256x192 mode"" ""Run game in 512x192 mode"" ""Back..."""
-310   .$ SPUI a$
-320   LET %s = % REG 127
-330   IF %s = 1 THEN .nexload level9_256.nex
-340   IF %s = 2 THEN .nexload level9_512.nex
-350   CD ".."
-360 ENDPROC
+240 IF %m = 18 THEN .guide run.gde: GOTO 30
+250 ERASE
+260 ;****** Sub menu ******
+270 DEFPROC submenu(d$, n$)
+280   CLS
+290   REG 127,0
+300   CD d$
+310   LET a$ = "menu -x 1 -y 9 -c 28 -r 3 -t """ + n$ + """ ""Run game in 256x192 mode"" ""Run game in 512x192 mode"" ""Back..."""
+320   .$ SPUI a$
+330   LET %s = % REG 127
+340   IF %s = 1 THEN .nexload level9_256.nex
+350   IF %s = 2 THEN .nexload level9_512.nex
+360   CD ".."
+370 ENDPROC

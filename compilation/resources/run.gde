@@ -1,0 +1,831 @@
+@title The Level 9 Compilation
+@author Level 9 Computing, Stefan Bylund, Richard Hallas
+@version 1.0
+@copyright Copyright (C) 1982-2024 Level 9 Computing
+@date 2024/03/31
+
+@index INDEX
+
+@-------------------------------------------------------------------------------
+@node CONTENTS
+@next INTRO
+
+@{c}@{h1}The Level 9 Compilation
+
+@{c}@{h3}CONTENTS
+
+@{" Introduction " LINK INTRO}
+
+@{" User interface " LINK UI}
+@{" Commands in text adventure games " LINK COMMANDS_TA}
+@{" Commands in multiple choice games " LINK COMMANDS_MC}
+
+@{" The games " LINK GAMES}
+@{" Jewels of Darkness trilogy " LINK JEWELS_OF_DARK}
+@{" Silicon Dreams trilogy " LINK SILICON_DREAMS}
+@{" Time and Magik trilogy " LINK TIME_AND_MAGIK}
+@{" Emerald Isle " LINK EMERALD_ISLE}
+@{" The Saga of Erik the Viking " LINK SAGA_OF_ERIK}
+@{" Knight Orc " LINK KNIGHT_ORC}
+@{" Gnome Ranger & Gnome Ranger II " LINK GNOME_RANGERS}
+@{" Lancelot " LINK LANCELOT}
+@{" Scapeghost " LINK SCAPEGHOST}
+@{" Multiple choice games " LINK MULTI_CHOICE}
+
+@{" Credits " LINK CREDITS}
+
+@{" Index " LINK INDEX}
+
+@-------------------------------------------------------------------------------
+@node INDEX
+@toc CONTENTS
+
+@{c}@{h1}The Level 9 Compilation
+
+@{c}@{h3}INDEX
+
+@{" Adrian Mole, The Growing Pains of " LINK ADRIAN_MOLE_2}
+@{" Adrian Mole, The Secret Diary of " LINK ADRIAN_MOLE_1}
+@{" Adventure Quest " LINK ADVENT_QUEST}
+@{" The Archers " LINK THE_ARCHERS}
+@{" Colossal Adventure " LINK COLOSSAL_ADV}
+@{" Commands, multiple choice " LINK COMMANDS_MC}
+@{" Commands, text adventures " LINK COMMANDS_TA}
+@{" Contents " LINK CONTENTS}
+@{" Credits " LINK CREDITS}
+@{" Dungeon Adventure " LINK DUNGEON_ADVENT}
+@{" Emerald Isle " LINK EMERALD_ISLE}
+@{" Erik the Viking " LINK SAGA_OF_ERIK}
+@{" The games " LINK GAMES}
+@{" Gnome Ranger (series) " LINK GNOME_RANGERS}
+@{" Gnome Ranger " LINK GNOME_RANGER}
+@{" Gnome Ranger II: Ingrid's Back! " LINK GNOME_RANGER_2}
+@{" The Growing Pains of Adrian Mole " LINK ADRIAN_MOLE_2}
+@{" Ingrid's Back! (Gnome Ranger II) " LINK GNOME_RANGER_2}
+@{" Introduction " LINK INTRO}
+@{" Jewels of Darkness " LINK JEWELS_OF_DARK}
+@{" Knight Orc " LINK KNIGHT_ORC}
+@{" Lancelot " LINK LANCELOT}
+@{" List of games " LINK GAMES}
+@{" Lords of Time " LINK LORDS_OF_TIME}
+@{" Multiple choice games " LINK MULTI_CHOICE}
+@{" The Price of Magik " LINK PRICE_OF_MAGIK}
+@{" Red Moon " LINK RED_MOON}
+@{" Return to Eden " LINK RETURN_TO_EDEN}
+@{" The Saga of Erik the Viking " LINK SAGA_OF_ERIK}
+@{" Scapeghost " LINK SCAPEGHOST}
+@{" The Secret Diary of Adrian Mole " LINK ADRIAN_MOLE_1}
+@{" Silicon Dreams " LINK SILICON_DREAMS}
+@{" Snowball " LINK SNOWBALL}
+@{" Time and Magik " LINK TIME_AND_MAGIK}
+@{" User interface " LINK UI}
+@{" The Worm in Paradise " LINK WORM_PARADISE}
+
+@-------------------------------------------------------------------------------
+@node INTRO
+@next UI
+@previous CONTENTS
+@toc CONTENTS
+
+@{c}@{h3}INTRODUCTION
+
+The Level 9 Compilation is an unofficial compilation of all of Level 9
+Computing's text adventure and multiple choice games for the ZX Spectrum Next.
+All in all, there are 19 games: 16 text adventure games and three multiple
+choice games.
+
+The compilation includes the latest version of each game (to my knowledge), uses
+the Level 9 interpreter for Spectrum Next, has the game files packaged to suit
+this particular interpreter and has the graphics converted to Spectrum Next
+format. It is provided as a convenience as it can be difficult to find complete
+versions of some of the games nowadays. All games in the compilation except
+the multiple choice games have been tested with their walkthrough test scripts.
+
+@{b}Note:@{ub} The Level 9 games are copyright by Level 9 Computing. This compilation
+is not official and its curator is not affiliated with Level 9 Computing.
+The compilation is done in loving memory of Level 9 and their classic
+masterpieces and without any monetary gain involved. A big thank you to
+Mike Austin (one of the Level 9 founders) for his informal approval of
+this compilation!
+
+@{b}Note:@{ub} Some of the games will require the original manual for looking up
+words as part of the games' built-in copy protection scheme.
+
+The compilation is available in two versions: one that auto-boots from an SD
+card and another containing just the games. Inlay and label files are also
+available online, and allow you to create your own physical edition of the
+compilation if you wish.
+@{r}@{i}Stefan Bylund@{ui}
+
+@-------------------------------------------------------------------------------
+@node UI
+@next COMMANDS_TA
+@previous INTRO
+@toc CONTENTS
+
+@{c}@{h3}USER INTERFACE
+
+The game screen is divided into two sections. The top section shows the graphics
+for the current location and the bottom section is the text area which accepts
+user input at its prompt. When there are too many lines of text to display on
+the screen at once, the message "<MORE>" will appear at the bottom left of the
+screen. Pressing any key will continue the scrolling of the text.
+
+The last entered line of input can be edited by pressing the @{i}EDIT@{ui} key.
+
+The graphics can be scrolled up and down using the @{i}up@{ui} and @{i}down@{ui}
+arrow keys to make more or less room for the text. If a PS/2 mouse is connected
+to the Spectrum Next, it can also be used to scroll the graphics up and down by
+dragging it with the mouse or using the mouse wheel.
+
+The text colour can be changed by cycling downwards or upwards through a palette
+of 32 colours by pressing @{i}TRUE VIDEO@{ui} and @{i}INV VIDEO@{ui}, respectively.
+The default text colour is light grey.
+
+Here is a summary of the special keys used in the games:
+
+@{b}Spectrum Key  PS/2 Key  Description@{ub}
+@{i}EDIT          SHIFT+1@{ui}   Edit last entered line of input.
+@{i}UP            SHIFT+7@{ui}   Scroll graphics up.
+@{i}DOWN          SHIFT+6@{ui}   Scroll graphics down.
+@{i}TRUE VIDEO    SHIFT+3@{ui}   Cycle text colour downwards through 32-colour palette.
+@{i}INV VIDEO     SHIFT+4@{ui}   Cycle text colour upwards through 32-colour palette.
+@{i}Mouse         Mouse@{ui}     Scroll graphics up and down (drag or use mouse wheel).
+
+@-------------------------------------------------------------------------------
+@node COMMANDS_TA
+@next COMMANDS_MC
+@previous UI
+@toc CONTENTS
+
+@{c}@{h3}COMMANDS
+@{c}@{h4}in text adventure games
+
+The Level 9 interpreter and parser is quite advanced and supports a rich
+vocabulary. Below is a list of useful commands if you're new to text adventures,
+a list of special commands and a list of commands provided by the interpreter
+and not the game itself. Some commands are only supported by certain game
+versions, as indicated in parentheses.
+
+@{h4}Useful commands
+@{b}north@{ub} (@{b}n@{ub})
+@{b}south@{ub} (@{b}s@{ub})
+@{b}west@{ub} (@{b}w@{ub})
+@{b}east@{ub} (@{b}e@{ub})
+@{b}northwest@{ub} (@{b}nw@{ub})
+@{b}northeast@{ub} (@{b}ne@{ub})
+@{b}southwest@{ub} (@{b}sw@{ub})
+@{b}southeast@{ub} (@{b}se@{ub})
+@{b}up@{ub} (@{b}u@{ub})
+@{b}down@{ub} (@{b}d@{ub})
+@{b}in@{ub}
+@{b}out@{ub}
+@{b}exits@{ub} (V3/V4)
+@{b}go to @{i}<previously-visited-location>@{ui}@{ub} (V4)
+@{b}run to @{i}<previously-visited-location>@{ui}@{ub} (V4)
+@{b}follow @{i}<character>@{ui}@{ub} (V4)
+@{b}look@{ub}
+@{b}wait@{ub}
+@{b}wait for @{i}<character>@{ui}@{ub} (V4)
+@{b}wait for @{i}<number-of-turns>@{ui}@{ub} (V4)
+@{b}wait until @{i}<time>@{ui}@{ub} (V4)
+@{b}inventory@{ub} (@{b}inv@{ub})
+@{b}take@{ub} | @{b}get @{i}<object>@{ui}@{ub}
+@{b}drop @{i}<object>@{ui}@{ub}
+@{b}examine @{i}<object>@{ui}@{ub}
+@{b}find @{i}<previously-found-object>@{ui}@{ub} (V4)
+@{b}say @{i}<something>@{ui}@{ub} (V2/V3)
+@{b}@{i}<character>@{ui}, @{i}<commands-to-character>@{ui}@{ub} (V4)
+
+@{h4}Special commands
+          @{b}save@{ub}: Save the current game position to file.
+       @{b}restore@{ub}: Restore a previously saved game position from file.
+      @{b}ram save@{ub}: Save the current game position in RAM memory. (V3/V4)
+   @{b}ram restore@{ub}: Restore the latest saved game position from RAM. (V3/V4)
+     @{b}undo@{ub}/@{b}oops@{ub}: Restore the game position to before your last command. (V3/V4)
+       @{b}restart@{ub}: Restart the game. (V3/V4)
+          @{b}help@{ub}: Print help or hints.
+ @{b}brief@{ub}/@{b}verbose@{ub}: Select location description mode. (V3/V4)
+  @{b}exits on@{ub}/@{b}off@{ub}: Automatically report exits on or off. (V4)
+@{b}words@{ub}/@{b}pictures@{ub}: Turn pictures on or off.
+         @{b}score@{ub}: Print the current score.
+     @{b}again@{ub} (@{b}a@{ub}): Repeat the last command.
+
+@{h4}Interpreter commands
+            @{b}#save@{ub}: Like @{b}save@{ub}, but bypasses any disk change prompts.
+         @{b}#restore@{ub}: Like @{b}restore@{ub}, but bypasses any copy protection schemes.
+            @{b}#quit@{ub}: Quit the game.
+@{b}#picture @{i}<number>@{ui}@{ub}: Test command: show the picture with the given @{i}<number>@{ui}.
+   @{b}#seed @{i}<number>@{ui}@{ub}: Test command: set the random number seed to a given @{i}<number>@{ui}.
+            @{b}#play@{ub}: Test command: play back a script file as the game input.
+
+@-------------------------------------------------------------------------------
+@node COMMANDS_MC
+@next GAMES
+@previous COMMANDS_TA
+@toc CONTENTS
+
+@{c}@{h3}COMMANDS
+@{c}@{h4}in multiple choice games
+
+The multiple choice games are played by repeatedly selecting one of up to three
+given choices by pressing key @{i}1@{ui}, @{i}2@{ui} or @{i}3@{ui}. Pressing the @{i}4@{ui} key will open a command
+mode where you can enter one of the following commands:
+
+           @{b}save@{ub}: Save the current game position to file.
+           @{b}load@{ub}: Load a previously saved game position from file.
+        @{b}restart@{ub}: Restart the game.
+@{b}pictures on@{ub}/@{b}off@{ub}: Turn pictures on or off.
+           @{b}help@{ub}: Print general help or help for the given command.
+
+@-------------------------------------------------------------------------------
+@node GAMES
+@next JEWELS_OF_DARK
+@previous COMMANDS_MC
+@toc CONTENTS
+
+@{c}@{h3}THE GAMES
+
+The following pages provide a brief summary about each game and game collection
+in the Level 9 Compilation. For each entry there is a brief description of the
+release and information about the year in which it was issued (original release
+year in parentheses), the original platform from which the files are taken, the
+version used and the type of graphics in the game.
+
+There are four main versions of the Level 9 game file format: V1 to V4. The
+Level 9 interpreter for Spectrum Next only supports V2-V4 games in order to
+minimise the interpreter size and since all V1 games were re-released as V2/V3
+games anyway.
+
+There are two types of graphics used in the Level 9 games. The earlier releases
+used line-drawn graphics that were memory-efficient and portable but very
+simple. The later games used platform-specific bitmap graphics; first, digitised
+pictures that were an improvement on the previous line-drawn graphics but still
+a bit rough, and then later hand-drawn bitmap pictures of top quality.
+
+Note: two of the included games mix game files from IBM PC with bitmap files
+from Commodore Amiga. The reason for this is that the game files from the Amiga
+version didn't work with the walkthrough test scripts for these games, while
+the game files from the PC version worked fine. The graphics are better in the
+Amiga version, though, so the bitmap files are taken from there. This works
+fine since the bitmap files have the same names in both versions.
+
+@{" Jewels of Darkness trilogy " LINK JEWELS_OF_DARK}
+@{"    Colossal Adventure " LINK COLOSSAL_ADV}
+@{"    Adventure Quest " LINK ADVENT_QUEST}
+@{"    Dungeon Adventure " LINK DUNGEON_ADVENT}
+
+@{" Silicon Dreams trilogy " LINK SILICON_DREAMS}
+@{"    Snowball " LINK SNOWBALL}
+@{"    Return to Eden " LINK RETURN_TO_EDEN}
+@{"    The Worm in Paradise " LINK WORM_PARADISE}
+
+@{" Time and Magik trilogy " LINK TIME_AND_MAGIK}
+@{"    Lords of Time " LINK LORDS_OF_TIME}
+@{"    Red Moon " LINK RED_MOON}
+@{"    The Price of Magik " LINK PRICE_OF_MAGIK}
+
+@{" Emerald Isle " LINK EMERALD_ISLE}
+@{" The Saga of Erik the Viking " LINK SAGA_OF_ERIK}
+@{" Knight Orc " LINK KNIGHT_ORC}
+
+@{" Gnome Ranger & Gnome Ranger II " LINK GNOME_RANGERS}
+@{"    Gnome Ranger " LINK GNOME_RANGER}
+@{"    Gnome Ranger II: Ingrid's Back! " LINK GNOME_RANGER_2}
+
+@{" Lancelot " LINK LANCELOT}
+@{" Scapeghost " LINK SCAPEGHOST}
+
+@{" Multiple choice games " LINK MULTI_CHOICE}
+@{"    The Archers " LINK THE_ARCHERS}
+@{"    The Secret Diary of Adrian Mole " LINK ADRIAN_MOLE_1}
+@{"    The Growing Pains of Adrian Mole " LINK ADRIAN_MOLE_2}
+
+@-------------------------------------------------------------------------------
+@node JEWELS_OF_DARK
+@next COLOSSAL_ADV
+@previous GAMES
+@toc CONTENTS
+
+@{c}@{h3}JEWELS OF DARKNESS TRILOGY
+
+@{" Colossal Adventure " LINK COLOSSAL_ADV}
+@{" Adventure Quest " LINK ADVENT_QUEST}
+@{" Dungeon Adventure " LINK DUNGEON_ADVENT}
+
+             @{b}Year@{ub}: @{i}1986@{ui} (@{i}1982@{ui})
+@{b}Original platform@{ub}: @{i}Atari ST@{ui}
+     @{b}Game version@{ub}: @{i}V3@{ui}
+    @{b}Graphics type@{ub}: @{i}Line-drawn@{ui}
+
+The three games comprising the @{b}Jewels of Darkness@{ub} trilogy were Level 9's
+earliest releases. Issued as three individual games in 1982 under Level 9's
+own brand, they were originally known informally as the @{b}Middle Earth Trilogy@{ub}.
+Later, the games were significantly revised and updated and published together
+as a formal trilogy in lavish packaging by Rainbird in 1986, under the new
+collective title, @{b}Jewels of Darkness@{ub}.
+
+@-------------------------------------------------------------------------------
+@node COLOSSAL_ADV
+@next ADVENT_QUEST
+@previous JEWELS_OF_DARK
+@toc CONTENTS
+
+@{c}@{h3}COLOSSAL ADVENTURE
+
+@{b}Colossal Adventure@{ub} is a complete, full-size version of the classic mainframe
+game @{b}Adventure@{ub} with all the treasures, creatures, rooms and puzzles of the
+original. And we have added 70 bonus locations to the end-game. No one else
+gives you this. Visit Colossal Cavern and meet the giant snake, Chinese dragon
+and mercenary Troll, and watch out for the knives of the evil dwarfs. No true
+adventurer should miss this game.
+
+             @{b}Year@{ub}: @{i}1986@{ui} (@{i}1982@{ui})
+@{b}Original platform@{ub}: @{i}Atari ST@{ui}
+     @{b}Game version@{ub}: @{i}V3@{ui}
+    @{b}Graphics type@{ub}: @{i}Line-drawn@{ui}
+
+@-------------------------------------------------------------------------------
+@node ADVENT_QUEST
+@next DUNGEON_ADVENT
+@previous COLOSSAL_ADV
+@toc CONTENTS
+
+@{c}@{h3}ADVENTURE QUEST
+
+Hundreds of years have passed since the time of @{b}Colossal Adventure@{ub} and evil
+forces are invading the land. One hope remains: you must discover the Old Roads
+to the Dark Tower, fortress of the Demon Lord. Only there can you defeat him.
+The way is long and dangerous, through nine different regions of forest,
+desert, mountain, water, fire etc., but with cunning you can make it to the
+final confrontation with Agaliarept.
+
+             @{b}Year@{ub}: @{i}1986@{ui} (@{i}1982@{ui})
+@{b}Original platform@{ub}: @{i}Atari ST@{ui}
+     @{b}Game version@{ub}: @{i}V3@{ui}
+    @{b}Graphics type@{ub}: @{i}Line-drawn@{ui}
+
+@-------------------------------------------------------------------------------
+@node DUNGEON_ADVENT
+@next SILICON_DREAMS
+@previous ADVENT_QUEST
+@toc CONTENTS
+
+@{c}@{h3}DUNGEON ADVENTURE
+
+@{b}Dungeon Adventure@{ub} completes the @{b}Jewels of Darkness@{ub} trilogy. The Demon Lord
+has been defeated and his Dark Tower cast down. But its dungeons remain, filled
+with hoarded treasure and magic. There are just two snags. Other creatures want
+the loot as well, and many guardians remain: skeletons, carnivorous jellies,
+black balls etc. Even an orc or two. Success will not come easily!
+
+             @{b}Year@{ub}: @{i}1986@{ui} (@{i}1982@{ui})
+@{b}Original platform@{ub}: @{i}Atari ST@{ui}
+     @{b}Game version@{ub}: @{i}V3@{ui}
+    @{b}Graphics type@{ub}: @{i}Line-drawn@{ui}
+
+@-------------------------------------------------------------------------------
+@node SILICON_DREAMS
+@next SNOWBALL
+@previous DUNGEON_ADVENT
+@toc CONTENTS
+
+@{c}@{h3}SILICON DREAMS TRILOGY
+
+@{" Snowball " LINK SNOWBALL}
+@{" Return to Eden " LINK RETURN_TO_EDEN}
+@{" The Worm in Paradise " LINK WORM_PARADISE}
+
+             @{b}Year@{ub}: @{i}1986@{ui} (@{i}1983-5@{ui})
+@{b}Original platform@{ub}: @{i}Atari ST@{ui}
+     @{b}Game version@{ub}: @{i}V3@{ui}
+    @{b}Graphics type@{ub}: @{i}Line-drawn@{ui}
+
+In just the same way as with the @{b}Jewels of Darkness@{ub} trilogy,
+@{b}Silicon Dreams@{ub} took three formerly individual Level 9 releases,
+this time with a science fiction theme, and packaged together
+enhanced versions in a lavish box from Rainbird in 1986.
+
+@-------------------------------------------------------------------------------
+@node SNOWBALL
+@next RETURN_TO_EDEN
+@previous SILICON_DREAMS
+@toc CONTENTS
+
+@{c}@{h3}SNOWBALL
+
+The massive starship, @{i}Snowball 9@{ui}, is carrying two million hibernating
+colonists to Eden, fertile planet in the Eridani star system, in this top
+selling game with over 7000 locations. The Snowball has been hijacked and
+is heading into the sun in this first part of the @{b}Silicon Dreams@{ub} trilogy.
+You'll meet Waldroids, Nightingales and other strange robots in this massive
+science fiction adventure. But the most baffling puzzle, according to many
+players, is how to use the control room computer.
+
+             @{b}Year@{ub}: @{i}1986@{ui} (@{i}1983@{ui})
+@{b}Original platform@{ub}: @{i}Atari ST@{ui}
+     @{b}Game version@{ub}: @{i}V3@{ui}
+    @{b}Graphics type@{ub}: @{i}Line-drawn@{ui}
+
+@-------------------------------------------------------------------------------
+@node RETURN_TO_EDEN
+@next WORM_PARADISE
+@previous SNOWBALL
+@toc CONTENTS
+
+@{c}@{h3}RETURN TO EDEN
+
+@{b}Return to Eden@{ub} is the sequel to @{b}Snowball@{ub}. Marooned in the deadly paradise
+of Eden's jungles, you must use the weird plant life to survive. Then tackle
+the strange robot city to secure the fate of the whole planet. Examine the
+air bush, explore the maze and maybe find your roots. Then meet Graunch the
+golem, Big Brother and pesky Pepsy Koala, to name just a few of the robots.
+This is quite a game!
+
+             @{b}Year@{ub}: @{i}1986@{ui} (@{i}1984@{ui})
+@{b}Original platform@{ub}: @{i}Atari ST@{ui}
+     @{b}Game version@{ub}: @{i}V3@{ui}
+    @{b}Graphics type@{ub}: @{i}Line-drawn@{ui}
+
+@-------------------------------------------------------------------------------
+@node WORM_PARADISE
+@next TIME_AND_MAGIK
+@previous RETURN_TO_EDEN
+@toc CONTENTS
+
+@{c}@{h3}THE WORM IN PARADISE
+
+@{b}The Worm in Paradise@{ub} concludes the @{b}Silicon Dreams@{ub} trilogy and is set in the
+far future. Mankind rules a hundred planets and this empire is expanding
+throughout the galaxy. Utopia seems at hand, but one threat remains... Too many
+nearby planets can support human life and this cannot be by chance. It probably
+means mankind was intended to spread throughout the stars. But then what? Are
+we dealing with a benevolent God, or could mankind have been seeded by a cosmic
+farmer who will soon return to harvest his crop?
+
+             @{b}Year@{ub}: @{i}1986@{ui} (@{i}1985@{ui})
+@{b}Original platform@{ub}: @{i}Atari ST@{ui}
+     @{b}Game version@{ub}: @{i}V3@{ui}
+    @{b}Graphics type@{ub}: @{i}Line-drawn@{ui}
+
+@-------------------------------------------------------------------------------
+@node TIME_AND_MAGIK
+@next LORDS_OF_TIME
+@previous WORM_PARADISE
+@toc CONTENTS
+
+@{c}@{h3}TIME AND MAGIK TRILOGY
+
+@{" Lords of Time " LINK LORDS_OF_TIME}
+@{" Red Moon " LINK RED_MOON}
+@{" The Price of Magik " LINK PRICE_OF_MAGIK}
+
+             @{b}Year@{ub}: @{i}1988@{ui} (@{i}1983-6@{ui})
+@{b}Original platform@{ub}: @{i}Amiga@{ui}
+     @{b}Game version@{ub}: @{i}V4@{ui}
+    @{b}Graphics type@{ub}: @{i}Digitised bitmap@{ui}
+
+@{b}Time and Magik@{ub} was the third collection of individual Level 9 releases
+to be updated and repackaged as a formally titled trilogy by a new publisher,
+though on this occasion that publisher was Mandarin rather than Rainbird.
+
+@-------------------------------------------------------------------------------
+@node LORDS_OF_TIME
+@next RED_MOON
+@previous TIME_AND_MAGIK
+@toc CONTENTS
+
+@{c}@{h3}LORDS OF TIME
+
+In @{b}Lords of Time@{ub}, the evil Timelords are fighting to change world history with
+the aim of gaining permanent control over Time and warping eternity according
+to their wishes. You must travel through the eons inside an amazing grandfather
+clock. Visit many different time zones to search out nine essential artefacts,
+and combine them to protect Time and Magik and avert the evil planned by the
+Timelords.
+
+             @{b}Year@{ub}: @{i}1988@{ui} (@{i}1983@{ui})
+@{b}Original platform@{ub}: @{i}Amiga@{ui}
+     @{b}Game version@{ub}: @{i}V4@{ui}
+    @{b}Graphics type@{ub}: @{i}Digitised bitmap@{ui}
+
+@-------------------------------------------------------------------------------
+@node RED_MOON
+@next PRICE_OF_MAGIK
+@previous LORDS_OF_TIME
+@toc CONTENTS
+
+@{c}@{h3}RED MOON
+
+@{b}Red Moon@{ub} re-enacts a tale from the time where Magik still worked and when
+mythical monsters guarded fabulous treasure. You have the use of many weapons
+and a dozen different magical spells to help you rescue the Red Moon Crystal,
+the only source of Magik in the land.
+
+             @{b}Year@{ub}: @{i}1988@{ui} (@{i}1985@{ui})
+@{b}Original platform@{ub}: @{i}Amiga@{ui}
+     @{b}Game version@{ub}: @{i}V4@{ui}
+    @{b}Graphics type@{ub}: @{i}Digitised bitmap@{ui}
+
+@-------------------------------------------------------------------------------
+@node PRICE_OF_MAGIK
+@next EMERALD_ISLE
+@previous RED_MOON
+@toc CONTENTS
+
+@{c}@{h3}THE PRICE OF MAGIK
+
+The House of the Red Moon is a weird place, haunted by arcane powers from the
+mythical past. It is the only place where one might rise from Sorcerer's
+Apprentice to powerful Wizard, yet cheat the Price of Magik. @{b}The Price of Magik@{ub}
+is the sequel to @{b}Red Moon@{ub}.
+
+             @{b}Year@{ub}: @{i}1988@{ui} (@{i}1986@{ui})
+@{b}Original platform@{ub}: @{i}Amiga@{ui}
+     @{b}Game version@{ub}: @{i}V4@{ui}
+    @{b}Graphics type@{ub}: @{i}Digitised bitmap@{ui}
+
+@-------------------------------------------------------------------------------
+@node EMERALD_ISLE
+@next SAGA_OF_ERIK
+@previous PRICE_OF_MAGIK
+@toc CONTENTS
+
+@{c}@{h3}EMERALD ISLE
+
+Fierce winds seize your aircraft over the Bermuda Triangle and hurl it to
+destruction. You escape by parachute, floating downwards to the lonely atoll,
+@{b}Emerald Isle@{ub}, from which few escape. The only way out is to solve its
+challenges...
+
+             @{b}Year@{ub}: @{i}1985@{ui}
+@{b}Original platform@{ub}: @{i}Amstrad CPC@{ui}
+     @{b}Game version@{ub}: @{i}V2@{ui}
+    @{b}Graphics type@{ub}: @{i}Line-drawn@{ui}
+
+@-------------------------------------------------------------------------------
+@node SAGA_OF_ERIK
+@next KNIGHT_ORC
+@previous EMERALD_ISLE
+@toc CONTENTS
+
+@{c}@{h3}THE SAGA OF ERIK THE VIKING
+
+A visually dramatic adventure based on the award-winning book by Monty Python
+star Terry Jones. Travel as @{b}Erik the Viking@{ub}, in search of the evil Dogfighters
+who have kidnapped your family. Explore authentic Viking settlements and seek
+help from Wizards, Dragons and Giants in strange lands.
+
+             @{b}Year@{ub}: @{i}1985@{ui}
+@{b}Original platform@{ub}: @{i}Amstrad CPC@{ui}
+     @{b}Game version@{ub}: @{i}V2@{ui}
+    @{b}Graphics type@{ub}: @{i}Line-drawn@{ui}
+
+@-------------------------------------------------------------------------------
+@node KNIGHT_ORC
+@next GNOME_RANGERS
+@previous SAGA_OF_ERIK
+@toc CONTENTS
+
+@{c}@{h3}KNIGHT ORC
+
+@{b}Knight Orc@{ub} is Level 9's most innovative and fun-packed adventure to date.
+Set in three parts, it casts you as an oppressed orc in a magical world where
+all is not as it first seems. For generations humans have been persecuting orcs,
+and now it's time to get your own back. @{b}Knight Orc@{ub} is a challenging game
+which is truly interactive. Each character leads its own life in the game, and
+their actions can affect you and the outcome of the adventure. Communication
+with other characters, learning spells and solving puzzles are all a vital part
+of the game if you are to escape the mystical world and take revenge on
+humankind.
+
+             @{b}Year@{ub}: @{i}1987@{ui}
+@{b}Original platform@{ub}: @{i}PC@{ui} (game files), @{i}Amiga@{ui} (picture files)
+     @{b}Game version@{ub}: @{i}V4@{ui}
+    @{b}Graphics type@{ub}: @{i}Digitised bitmap@{ui}
+
+@-------------------------------------------------------------------------------
+@node GNOME_RANGERS
+@next GNOME_RANGER
+@previous KNIGHT_ORC
+@toc CONTENTS
+
+@{c}@{h3}GNOME RANGER & GNOME RANGER II: INGRID'S BACK!
+
+@{" Gnome Ranger " LINK GNOME_RANGER}
+@{" Gnome Ranger II: Ingrid's Back! " LINK GNOME_RANGER_2}
+
+             @{b}Year@{ub}: @{i}1987@{ui}; @{i}1988@{ui}
+@{b}Original platform@{ub}: @{i}PC@{ui} (game), @{i}Amiga@{ui} (pictures); @{i}Atari ST@{ui}
+     @{b}Game version@{ub}: @{i}V4@{ui}
+    @{b}Graphics type@{ub}: @{i}Digitised bitmap; Hand-drawn bitmap@{ui}
+
+Despite being obviously linked, with the second @{b}Gnome Ranger@{ub} instalment being
+clearly labelled as a sequel to the first, these two games remained as separate
+releases and appear together for the first time only now, in this complete
+compilation of Level 9's collected adventures.
+
+@-------------------------------------------------------------------------------
+@node GNOME_RANGER
+@next GNOME_RANGER_2
+@previous GNOME_RANGERS
+@toc CONTENTS
+
+@{c}@{h3}GNOME RANGER
+
+When Ingrid the Sloane Gnome is banished to the wilderness by her exasperated
+family, the monsters don't know what's hit them! @{b}Gnome Ranger@{ub} is a magical
+three-part adventure from Level 9.
+
+             @{b}Year@{ub}: @{i}1987@{ui}
+@{b}Original platform@{ub}: @{i}PC@{ui} (game files), @{i}Amiga@{ui} (picture files)
+     @{b}Game version@{ub}: @{i}V4@{ui}
+    @{b}Graphics type@{ub}: @{i}Digitised bitmap@{ui}
+
+@-------------------------------------------------------------------------------
+@node GNOME_RANGER_2
+@next LANCELOT
+@previous GNOME_RANGER
+@toc CONTENTS
+
+@{c}@{h3}GNOME RANGER II: INGRID'S BACK!
+
+Jasper Quickbuck, insider-dealing lord of Ridley's Manor, plots to steamroller
+the gnome-belt for yuppie housing. To the gnomes' horror, accident-prone Ingrid
+Bottomlow, who just escaped from her "holiday" in the wilderness, seems to be
+their only hope. When immovable market forces meet the irresistible Ingrid,
+will there be a U-turn? Or will humour be the only winner?
+
+             @{b}Year@{ub}: @{i}1988@{ui}
+@{b}Original platform@{ub}: @{i}Atari ST@{ui}
+     @{b}Game version@{ub}: @{i}V4@{ui}
+    @{b}Graphics type@{ub}: @{i}Hand-drawn bitmap@{ui}
+
+@-------------------------------------------------------------------------------
+@node LANCELOT
+@next SCAPEGHOST
+@previous GNOME_RANGER_2
+@toc CONTENTS
+
+@{c}@{h3}LANCELOT
+
+Travel back to the Age of Chivalry when knights were bold, galloping across the
+countryside and rescuing damsels in distress. Level 9 recreates the time of
+wizards and the Knights of the Round Table in their greatest adventure yet.
+@{b}Lancelot@{ub} is a three-part adventure, spanning the complete saga from the
+foundation of the Order to its finest hour - the quest for the Holy Grail.
+Guide Lancelot through his many exploits at Camelot, battle with wayward knights
+and win the love of Guinevere and Elaine. The challenge which has fascinated
+treasure hunters through the centuries is now yours - and you'll need all your
+strength, wits and valour to achieve your goal.
+
+             @{b}Year@{ub}: @{i}1988@{ui}
+@{b}Original platform@{ub}: @{i}Amiga@{ui}
+     @{b}Game version@{ub}: @{i}V4@{ui}
+    @{b}Graphics type@{ub}: @{i}Hand-drawn bitmap@{ui}
+
+@-------------------------------------------------------------------------------
+@node SCAPEGHOST
+@next MULTI_CHOICE
+@previous LANCELOT
+@toc CONTENTS
+
+@{c}@{h3}SCAPEGHOST
+
+It's not easy being a ghost, betrayed to a criminal gang and falsely blamed for
+your own death when they escape with a hostage. Reincarnated in your old haunts,
+you have just three nights to clear your name. But with your detective skills
+and new psychic powers, a spirited revenge is a dead cert. The gangsters haven't
+the ghost of a chance!
+
+             @{b}Year@{ub}: @{i}1989@{ui}
+@{b}Original platform@{ub}: @{i}Amiga@{ui}
+     @{b}Game version@{ub}: @{i}V4@{ui}
+    @{b}Graphics type@{ub}: @{i}Hand-drawn bitmap@{ui}
+
+@-------------------------------------------------------------------------------
+@node MULTI_CHOICE
+@next THE_ARCHERS
+@previous SCAPEGHOST
+@toc CONTENTS
+
+@{c}@{h3}MULTIPLE CHOICE GAMES
+
+@{" The Archers " LINK THE_ARCHERS}
+@{" The Secret Diary of Adrian Mole " LINK ADRIAN_MOLE_1}
+@{" The Growing Pains of Adrian Mole " LINK ADRIAN_MOLE_2}
+
+             @{b}Year@{ub}: @{i}1985-7@{ui}
+@{b}Original platform@{ub}: @{i}Amstrad CPC@{ui}
+     @{b}Game version@{ub}: @{i}V3@{ui}
+    @{b}Graphics type@{ub}: @{i}Line-drawn@{ui}
+
+Level 9 published three multiple-choice games; they were not so much adventures
+as interactive stories in which the player was presented with a series of
+choices that could affect the progress of the game to a greater or lesser
+extent. The first such game was @{b}The Archers@{ub} for Mosaic Publishing;
+the second, also for Mosaic and published in the same year (1985), was an
+adaptation of @{b}The Secret Diary of Adrian Mole@{ub}, the first instalment in
+Sue Townsend's hugely popular series. The final game of this type was another
+Adrian Mole book adaptation, this time based on the similarly popular @{b}Growing
+Pains@{ub} sequel. This was not published by Mosaic, however, but rather by Virgin.
+
+@-------------------------------------------------------------------------------
+@node THE_ARCHERS
+@next ADRIAN_MOLE_1
+@previous MULTI_CHOICE
+@toc CONTENTS
+
+@{c}@{h3}THE ARCHERS
+
+If they put you in charge of @{b}The Archers@{ub}, how would you change life in
+Ambridge? Here's your chance to find out. In this four-part multiple choice
+illustrated text game you are the story editor, taking the plot decisions for
+Jack Wooley, Eddie Grundy, Elizabeth Archer and Nelson Gabriel. You're in
+charge, but you'll have to face the consequences of your decisions. They may
+cause a stir in The Bull - or in Broadcasting House. Watch out for memos from
+the Controller of Radio 4 and see how you fare in the charts! Based on the
+BBC soap opera of the same name.
+
+             @{b}Year@{ub}: @{i}1985@{ui}
+@{b}Original platform@{ub}: @{i}Amstrad CPC@{ui}
+     @{b}Game version@{ub}: @{i}V3@{ui}
+    @{b}Graphics type@{ub}: @{i}Line-drawn@{ui}
+
+@-------------------------------------------------------------------------------
+@node ADRIAN_MOLE_1
+@next ADRIAN_MOLE_2
+@previous THE_ARCHERS
+@toc CONTENTS
+
+@{c}@{h3}THE SECRET DIARY OF ADRIAN MOLE
+
+I learned today that I am to be the subject of a computer game. The object of
+the game is to make me popular with everyone, which sounds dead brilliant.
+Apparently they've written an enormous programme containing 200 kilos of text,
+which Brainbox Henderson says is a lot. Now everyone else can have a go at
+coping with all the problems that beset me over an entire year of my life.
+This is a multiple choice illustrated text game for family entertainment and
+is a change from Level 9's adventure games. Based on the children's book of
+the same title by Sue Townsend.
+
+             @{b}Year@{ub}: @{i}1985@{ui}
+@{b}Original platform@{ub}: @{i}Amstrad CPC@{ui}
+     @{b}Game version@{ub}: @{i}V3@{ui}
+    @{b}Graphics type@{ub}: @{i}Line-drawn@{ui}
+
+@-------------------------------------------------------------------------------
+@node ADRIAN_MOLE_2
+@next CREDITS
+@previous ADRIAN_MOLE_1
+@toc CONTENTS
+
+@{c}@{h3}THE GROWING PAINS OF ADRIAN MOLE
+
+Welcome to the second computer game to feature the contents of my diary - is
+there no such thing as privacy? Such is the price of fame, I suppose. The aim
+of the game is to make decisions for me through multiple choice questions.
+Now I am more mature, life is even more complicated and I have even more
+decisions to make, so there is a lot of text in there and some very nice
+illustrations too. Some may think it's a game; I prefer to think of it as a
+sort of quest for the Meaning of Life - not easy to find in Laurel Close,
+Leicester! So good luck, being popular as well as an intellectual is not so
+easy. I should know, I have spent all my life trying! Based on the children's
+book of the same title by Sue Townsend.
+
+             @{b}Year@{ub}: @{i}1987@{ui}
+@{b}Original platform@{ub}: @{i}Amstrad CPC@{ui}
+     @{b}Game version@{ub}: @{i}V3@{ui}
+    @{b}Graphics type@{ub}: @{i}Line-drawn@{ui}
+
+@-------------------------------------------------------------------------------
+@node CREDITS
+@previous ADRIAN_MOLE_2
+@toc CONTENTS
+
+@{c}@{h3}CREDITS
+
+A big thank you to @{b}Mike Austin@{ub} (one of the Level 9 founders) for his
+informal approval of bundling this game compilation with the Level 9
+interpreter for Spectrum Next. Thanks Mike for making this possible!
+
+@{h4}Level 9 interpreter:
+@{b}Glen Summers@{ub}, with contributions from @{b}David Kinder@{ub}, @{b}Alan Staniforth@{ub},
+@{b}Simon Baldwin@{ub}, @{b}Dieter Baron@{ub} and @{b}Andreas Scherrer@{ub}
+
+@{h4}Spectrum Next port:
+@{b}Stefan Bylund@{ub}
+
+@{h4}QLStyle font:
+@{b}Phoebus Dokos@{ub}
+
+@{h4}SPUI menu software:
+@{b}Stale Pixels@{ub}
+
+@{h4}Physical packaging design & Spectrum Next Guide:
+@{b}Richard Hallas@{ub}
+
+@{h4}All games:
+@{b}Copyright @( 1982-1989 by Level 9 Computing@{ub}
+
+@-------------------------------------------------------------------------------

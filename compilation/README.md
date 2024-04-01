@@ -98,7 +98,8 @@ directory of the same SD card.
 3. Insert the SD card into your Spectrum Next computer and start it.
 
 4. This will bring up a start menu where you can select which of the games you
-want to play.
+want to play, and in what screen resolution. Documentation in NextGuide format
+is available from the start menu.
 
 **Note:** The first time you boot the SD card, you will see the NextZXOS test
 screen and have to select which video mode to use (HDMI/VGA/RGB and 50/60 Hz
@@ -116,7 +117,8 @@ Spectrum Next system software.
 3. Highlight the **level9.run** runnable directory in the NextZXOS Browser and
 press Enter. This will automatically launch its run.bas program, which will
 bring up a start menu where you can select which of the games you want to play,
-and in what screen resolution.
+and in what screen resolution. Documentation in NextGuide format is available
+from the start menu.
 
 4. Alternatively, hold Symbol Shift when pressing Enter to manually open the
 **level9.run** directory to access its contents. Then go to the desired game
@@ -308,6 +310,8 @@ The start menu is created with SPUI, copyright (C) 2020 by Stale Pixels.
 
 The case cover and SD card label were designed by Richard Hallas in 2023.
 
+The documentation in NextGuide format was written by Richard Hallas in 2024.
+
 Jewels of Darkness trilogy is copyright (C) 1986 by Level 9 Computing.
 
 Colossal Adventure is copyright (C) 1982, 1986 by Level 9 Computing.
@@ -348,6 +352,6 @@ Scapeghost is copyright (C) 1989 by Level 9 Computing.
 
 The Archers is copyright (C) 1985 by Level 9 Computing.
 
-The Secret Diary of Adrian Mole Aged 13 &#190; is copyright (C) 1985 by Level 9 Computing.
+The Secret Diary of Adrian Mole Aged 13&#190; is copyright (C) 1985 by Level 9 Computing.
 
 The Growing Pains of Adrian Mole is copyright (C) 1987 by Level 9 Computing.

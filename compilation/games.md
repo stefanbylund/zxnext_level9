@@ -26,6 +26,13 @@ the bitmap files have the same names in both versions.
 
 ## Jewels of Darkness trilogy
 
+The three games comprising the Jewels of Darkness trilogy were Level 9's
+earliest releases. Issued as three individual games in 1982 under Level 9's
+own brand, they were originally known informally as the Middle Earth Trilogy.
+Later, the games were significantly revised and updated and published together
+as a formal trilogy in lavish packaging by Rainbird in 1986, under the new
+collective title, Jewels of Darkness.
+
 ### Colossal Adventure
 
 Colossal Adventure is a complete, full-size version of the classic mainframe
@@ -74,6 +81,11 @@ balls etc. Even an orc or two. Success will not come easily!
 ![Dungeon Adventure](screenshots/dungeon-adventure.png)
 
 ## Silicon Dreams trilogy
+
+In just the same way as with the Jewels of Darkness trilogy, Silicon Dreams took
+three formerly individual Level 9 releases, this time with a science fiction
+theme, and packaged together enhanced versions in a lavish box from Rainbird
+in 1986.
 
 ### Snowball
 
@@ -126,6 +138,10 @@ farmer who will soon return to harvest his crop?
 ![The Worm in Paradise](screenshots/worm-in-paradise.png)
 
 ## Time and Magik trilogy
+
+Time and Magik was the third collection of individual Level 9 releases to be
+updated and repackaged as a formally titled trilogy by a new publisher, though
+on this occasion that publisher was Mandarin rather than Rainbird.
 
 ### Lords of Time
 
@@ -289,6 +305,16 @@ the ghost of a chance!
 
 ## Multiple choice games
 
+Level 9 published three multiple choice games; they were not so much adventures
+as interactive stories in which the player was presented with a series of
+choices that could affect the progress of the game to a greater or lesser
+extent. The first such game was The Archers for Mosaic Publishing; the second,
+also for Mosaic and published in the same year (1985), was an adaptation of
+The Secret Diary of Adrian Mole, the first instalment in Sue Townsend's hugely
+popular series. The final game of this type was another Adrian Mole book
+adaptation, this time based on the similarly popular Growing Pains sequel.
+This was not published by Mosaic, however, but rather by Virgin.
+
 ### The Archers
 
 If they put you in charge of The Archers, how would you change life in Ambridge?
@@ -323,7 +349,7 @@ title by Sue Townsend.
 * Game version: V3
 * Graphics type: Line-drawn
 
-![The Secret Diary of Adrian Mole Aged 13 &#190;](screenshots/secret-diary-of-adrian-mole.png)
+![The Secret Diary of Adrian Mole](screenshots/secret-diary-of-adrian-mole.png)
 
 ### The Growing Pains of Adrian Mole
 
