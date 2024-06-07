@@ -42,14 +42,14 @@ Thanks to Richard Hallas for creating this beautiful cover!
 **Prerequisites:** Case and an empty pre-formatted SD card.
 
 1. Go to [specnext.com](https://www.specnext.com/latestdistro) and download the
-lite version of the Spectrum Next system software, e.g.
-**System/Next distribution v.1.3.2 LITE VERSION**, and unpack it on an empty
-pre-formatted SD card.
+latest lightweight version of the System/Next distribution (the Spectrum Next
+system software) and unpack it on an empty pre-formatted SD card.
 
 2. Download [level9-boot.zip](level9-boot.zip) and unpack it in the root
 directory of the same SD card. This is an auto-bootable System/Next overlay that
-contains all the games and which will overwrite the default autoexec.bas file to
-provide a start menu where you can select which of the games you want to play.
+contains all the games and which will overwrite the default SPUI file with a
+newer version and add an autoexec.bas file for launching a start menu where you
+can select which of the games you want to play.
 
 3. Download [case-cover-print.pdf](resources/case-cover-print.pdf) and open it
 in [Adobe Acrobat Reader](https://get.adobe.com/reader/). If you can print
@@ -61,9 +61,12 @@ cover) and print it on glossy A4 paper in landscape mode with scaling set to
 
 4. Select page 3 (the SD card label) and print it on glossy self-adhesive paper
 with scaling set to "actual size". Cut out the printed label with the help of
-the crop marks.
+the crop marks. If you are using a microSD card with an SD card adapter, cut the
+bottom of the label at the crop marking "microSD adapter trim".
 
-5. Insert the printed cover into the case and stick the label on the SD card.
+5. Insert the printed cover into the case and stick the label on the SD card
+by aligning its white area with the padlock symbol and arrow with the locking
+slider on the SD card.
 
 That's it! Now you have your own physical edition of The Level 9 Compilation!
 
@@ -88,12 +91,13 @@ Skip steps 1 and 2 if you have already followed the equivalent steps in *Create
 Your Own Physical Edition*.
 
 1. Go to [specnext.com](https://www.specnext.com/latestdistro) and download the
-lite version of the Spectrum Next system software, e.g.
-**System/Next distribution v.1.3.2 LITE VERSION**, and unpack it on an empty
-pre-formatted SD card.
+latest lightweight version of the System/Next distribution (the Spectrum Next
+system software) and unpack it on an empty pre-formatted SD card.
 
 2. Download [level9-boot.zip](level9-boot.zip) and unpack it in the root
-directory of the same SD card.
+directory of the same SD card. This is an auto-bootable System/Next overlay that
+contains all the games and which will overwrite the default SPUI file with a
+newer version and add an autoexec.bas file for launching a start menu.
 
 3. Insert the SD card into your Spectrum Next computer and start it.
 
